@@ -74,8 +74,8 @@ footer {
 }
 
 .mojigroup.active {
-  background-color: #f9f9f9;
-  border-color: #58b2ee;
+  background-color: #f9f9f934;
+  border-color: #368ac2;
 }
 
 a {
@@ -273,22 +273,5 @@ code {
 }
 
 .tips {
-  color: #777;
-}
-
-@media (max-width: 480px) {
-  .input-search {
-    width: 100%;
-  }
-
-  .clear-search,
-  .mojigroup {
-    display: none;
-  }
-
-  input { font-size: 14px; }
-
-  ul { padding: 0; }
-
-  .emoji-wrapper { padding: 0; }
+  color: rgb(119, 119, 119);
 }

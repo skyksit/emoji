@@ -1,24 +1,24 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href='/fav.png' rel='shortcut icon'>
     <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport">
-    <meta content="Emoji searcher" property="og:title">
-    <meta content="Emoji searcher" property="title">
+    <meta content="이모지 검색기" property="og:title">
+    <meta content="이모지 검색기" property="title">
     <meta content="Find the emoji that echoes your heart using keywords! No need to remember all the names of emoji." property="description">
     <meta content="Find the emoji that echoes your heart using keywords! No need to remember all the names of emoji." property="og:description">
     <meta content="https://emoji.muan.co/appicon.png" property="og:image">
-    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Emoji searcher" />
-    <title>Emoji searcher</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="이모지 검색기" />
+    <title>이모지 검색기</title>
     <link rel="apple-touch-icon-precomposed" sizes="64x64" href="/appicon.png">
     <link href="stylesheets/style.css" rel="stylesheet">
-    <script>
+    <!-- <script>
       if(location.hostname === "muan.co") {
         location.href = "https://emoji.muan.co/" + location.hash
       }
-    </script>
+    </script> -->
   </head>
 
   <body>
@@ -27,6 +27,8 @@
       <button type="button" class="button pull-right js-remove-twemoji">Remove Twemoji</button>
       <input type="search" class="input-search speedy-filter" placeholder="Search" autofocus aria-label="Search emoji">
       <a href="#" class="button js-clear-search clear-search">❌</a>
+    </header>
+    <div class="mojigroup">
       <a href="#cats" class="mojigroup button">
         🐈
       </a>
@@ -42,7 +44,7 @@
       <a href="#photo" class="mojigroup button">
         🌁
       </a>
-    </header>
+    </div>
 
     <main class="list">
       <ul class="emojis-container">
