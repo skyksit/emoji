@@ -3,9 +3,9 @@ var filter = document.querySelector('.speedy-filter')
 function searchHash() {
   if (window.location.hash.length) {
     filter.value = window.location.hash.substr(1)
-    search(filter.value)
-  } else {
-    search()
+  //   search(filter.value)
+  // } else {
+  //   search()
   }
 }
 document.addEventListener('emoji:ready', searchHash)
@@ -30,7 +30,8 @@ function setRelatedDOMVisibility (keyword) {
 }
 
 function updateHashWithInputValue() {
-  window.location.hash = filter.value.replace(' ', '_')
+  // window.location.hash = filter.value.replace(' ', '_')
+  window.location.hash = filter.value
 }
 
 filter.addEventListener('input', updateHashWithInputValue)
