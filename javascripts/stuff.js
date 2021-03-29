@@ -1,7 +1,7 @@
 /* global $, localStorage */
 var searchField = document.querySelector('.input-search')
 var container = document.querySelector('.emojis-container')
-var url = '//unpkg.com/emojilib@^3.0.0'
+var url = '//unpkg.com/emojilib@latest'
 
 document.addEventListener('click', function (evt) {
   const emoji = evt.target.closest('.js-emoji')
