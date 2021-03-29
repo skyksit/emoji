@@ -2,10 +2,10 @@ var filter = document.querySelector('.speedy-filter')
 
 function searchHash() {
   if (window.location.hash.length) {
-    filter.value = window.location.hash.substr(1)
-  //   search(filter.value)
-  // } else {
-  //   search()
+    filter.value = decodeURIComponent(window.location.hash.substr(1))
+    search(filter.value)
+  } else {
+    search()
   }
 }
 document.addEventListener('emoji:ready', searchHash)
@@ -29,17 +29,12 @@ function setRelatedDOMVisibility (keyword) {
   document.querySelector('.no-results').hidden = foundSomething
 }
 
-function updateHashWithInputValue() {
-  // window.location.hash = filter.value.replace(' ', '_')
-  window.location.hash = filter.value
-}
-
-filter.addEventListener('input', updateHashWithInputValue)
-
 document.addEventListener('click', event => {
   if (event.target.classList.contains('group')) {
     filter.value = event.target.href.substr(1)
     search(filter.value)
+  } else if (event.target.classList.contains('go-search')) {
+    window.location.href = '#' + filter.value.replace(' ', '_')
   } else if (event.target.classList.contains('js-clear-search')) {
     filter.value = ''
   }

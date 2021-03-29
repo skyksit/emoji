@@ -10,6 +10,7 @@ input,
 button {
   font-family: andalemono, menlo, monospace;
   font-size: 15px;
+  cursor: pointer;
 }
 
 body {
