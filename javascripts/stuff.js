@@ -26,7 +26,7 @@ document.addEventListener('click', function (evt) {
 
 function prepareTwemoji () {
   var twemojiScript = document.createElement('script')
-  twemojiScript.src = '//twemoji.maxcdn.com/2/twemoji.min.js?2.2.3'
+  twemojiScript.src = '//twemoji.maxcdn.com/v/latest/twemoji.min.js'
   twemojiScript.onload = function () {
     twemoji.parse(document.body)
     document.body.classList.add('twemojified')

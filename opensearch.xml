@@ -1,7 +1,8 @@
-<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
-    <ShortName>Emoji searcher</ShortName>
-    <Description>Find the emoji that echoes your mind.</Description>
-    <Image height="64" width="64" type="image/png">https://emoji.muan.co/fav.png</Image>
-    <Url type="text/html" method="get" template="https://emoji.muan.co/#{searchTerms}"/>
-    <Url type="application/opensearchdescription+xml" rel="self" template="https://emoji.muan.co/opensearch.xml"/>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+    xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+    <ShortName>이모지 검색기</ShortName>
+    <Description>마음에 드는 이모지를 찾으세요</Description>
+    <Image height="64" width="64" type="image/png">https://skyksit.com/emoji/fav.png</Image>
+    <Url type="text/html" method="get" template="https://skyksit.com/emoji/#{searchTerms}"/>
+    <Url type="application/opensearchdescription+xml" rel="self" template="https://skyksit.com/emoji/opensearch.xml"/>
 </OpenSearchDescription>
